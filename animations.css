@@ -1,0 +1,35 @@
+.first-div{
+    border: solid;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: brown;
+    margin: 100px;
+    animation: mySlide 5s ease-out 0s 3 forwards;
+}
+
+@keyframes mySlide{
+
+    50%{scale: 2 ;
+        border-radius: 0;
+    }
+    100%{transform: rotate(360deg);
+        scale: 2;
+        border-radius: 40%;
+    }
+}
+
+.second-div{
+    border: solid;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 50px;
+    background-color: brown;
+    animation: mySlide ;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    
+}

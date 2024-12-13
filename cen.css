@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: orange;
+}   
+
+h1{
+    font-size: 5rem;
+    font-weight: 50px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-size: x-large;
+    gap: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
