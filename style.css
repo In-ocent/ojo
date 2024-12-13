@@ -1,0 +1,111 @@
+:root{
+    --background-color: ;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    background-color: #48CFCB;
+    position: fixed;
+    width: 100%;
+}
+#logo{
+    font-size: 3rem;
+    font-weight: 20rem;
+    color: white;
+}
+ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bolder;
+}
+ul li a{
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 2s ease;
+}
+
+#active a:hover::after{
+    width: 100%;
+
+}
+.togle-boton{
+    display: none;
+    gap: 0.2rem;
+    flex-direction: column;
+  
+}
+.togle-boton span{
+    width: 3rem;
+    height: 0.4rem;
+      display: block;
+    background-color: aliceblue;
+    border-radius: 3px;
+}
+.Seach{
+    gap: 0;
+}
+.text{
+    width: 200px;
+    height: 30px;
+    font-size: large;
+    background-color: transparent;
+    border-bottom-color: brown;
+}
+.button{
+    height: 30px;
+    background-color: rgb(188, 121, 121);
+    width: 50px;
+}
+
+.togle-boton{
+    display: none;
+    flex-direction: column;
+    gap: .3rem;
+
+}
+span{
+    width: 7rem;
+    height: 2rem;
+    background-color: rgb(0, 136, 255);
+    display: block;
+}
+
+@media (max-width:550px) {
+    ul{
+        display: none;
+    }
+    .Seach{
+        display: none;
+    }
+    .togle-boton{
+        display: flex;
+    }
+}
