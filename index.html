@@ -36,15 +36,43 @@
             <p> Am a full stark web developer 
             I creat and mentain a web site. 
            Every website should be biult with two primary goals: Firstly, it needs to work across all device, it need to be fast as possible.</p>
-           <ul class="sck">
+           <div class="sck">
                 <h2>skills </h2>
                 <h4><li> Html</li></h4>
                 <h4> <li>Css </li></h4>
                 <h4> <li>javascrip </li></h4>
                 <h4> <li>React </li></h4>
-           </ul>
+           </div>
         </div>
         <iframe src="https://www.youtube.com/embed/j1laALb8OVM?si=nbP6CaAN_pRlhjra" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+    <script>
+
+const name = prompt('input your name');
+const age = prompt('inpute your age');
+
+if (age <18) {
+    alert(`you are not allow here 'age${age}' you must be 18 and above`)
+    alert('provde your name and age')
+
+} 
+else if (age >=100){
+    alert('you are too old to enter this site')
+}
+else if(age && name){
+    alert('valid')
+    alert(`welcom ${name}`)
+    alert('you can now enjoy')
+}
+else if (!name && !age){
+    alert('you are not allow')
+    prompt('input your name')
+    alert(` ${name} welcom`)
+}else{
+    alert('you are not allow')
+    alert('shech your name and age')
+}
+
+    </script>
 </body>
 </html>
